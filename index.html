@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cinematic glassmorphism portfolio website for a web developer." />
+  <title>Grant Connor | Web Developer</title>
+  <link rel="preload" as="image" href="./background.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background image path is set to ./background.png in styles.css -->
+
+  <div class="site-bg" aria-hidden="true"></div>
+  <div class="site-vignette" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#hero" aria-label="Go to top">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Grant Connor</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+        aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a class="nav-link active" href="#hero">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="button button-ghost dev-mode-toggle" type="button" aria-pressed="false">Dev Mode</button>
+        <a class="button button-ghost dev-only" href="https://github.com/GrantConnor" target="_blank"
+          rel="noreferrer">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section section-hero" id="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy glass-panel motion" data-direction="left">
+          <p class="eyebrow">Web Developer • Front-End • Creative Systems</p>
+          <h1>
+            Building refined digital experiences with cinematic calm and modern precision.
+          </h1>
+          <p class="hero-text">
+            I design and develop elegant web interfaces that feel immersive, fast, and
+            intentional. Designing websites that feel truly unique.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">View Work</a>
+            <a class="button button-secondary" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+
+        <aside class="hero-meta glass-panel motion" data-direction="right">
+          <p class="meta-label">Available for</p>
+          <ul class="meta-list" aria-label="Availability and focus">
+            <li>Company websites</li>
+            <li>High-end landing pages</li>
+            <li>Custom front-end development</li>
+            <li>UI polish & interaction design</li>
+          </ul>
+
+          <div class="meta-divider"></div>
+
+          <p class="meta-note">
+            Clean architecture. Smooth motion. Premium presentation. Built with HTML,
+            CSS, and vanilla JavaScript.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="shell section-stack">
+        <div class="section-intro motion" data-direction="left">
+          <p class="section-kicker">About</p>
+          <h2>A minimal portfolio with depth, elegance, and clarity.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-panel about-card motion" data-direction="left">
+            <p>
+              I found a passion in design and creation three years ago. Ever since, I've been honing my craft and
+              creating
+              beautiful websites. Contact me and let's create something unique for what ever you may need.
+            </p>
+            <p>
+              I take into account the atmosphere of the website im creating, decide on a color scheme and start creating
+              a unique experience for every site that I build.
+            </p>
+          </article>
+
+          <aside class="glass-panel stats-card motion" data-direction="right">
+            <div class="stat-row">
+              <span class="stat-value">3+</span>
+              <span class="stat-label">Years crafting interfaces</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-value">12</span>
+              <span class="stat-label">Mock projects deployed</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Customizable for your workflow</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-feature" id="work">
+      <div class="shell section-stack">
+        <div class="section-intro motion" data-direction="right">
+          <p class="section-kicker">Selected Work</p>
+          <h2>Showcase of my projects, polished and ready to go.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT CARD START: Duplicate this article block to add more projects. -->
+          <article class="project-card glass-panel motion" data-direction="left">
+            <div class="project-media">
+              <img src="./highland-table-preview.png" alt="Highland Table project preview" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Project One</h3>
+                <span class="project-badge">Featured</span>
+              </div>
+              <p>
+                A nuance look into a fictional restaurant using modern styles and a custom layout.
+              </p>
+              <p class="project-stack">HTML • CSS • JavaScript • Responsive UI</p>
+              <div class="project-links">
+                <a class="button button-secondary" href="https://highland-table.netlify.app" target="_blank"
+                  rel="noreferrer">Live Demo</a>
+                <a class="button button-ghost dev-only" href="https://github.com/GrantConnor/Highland-Table"
+                  target="_blank" rel="noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-panel motion" data-direction="right">
+            <div class="project-media">
+              <img src="./polyscope-labs-preview.png" alt="Polyscope Labs project preview" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Project Two</h3>
+                <span class="project-badge">UI System</span>
+              </div>
+              <p>
+                An exceptional mock product page with storytelling and a display of a new interesting layout. Fully
+                polished front-end
+                web-page for you to explore.
+              </p>
+              <p class="project-stack">Design System • Accessibility • Motion • CSS</p>
+              <div class="project-links">
+                <a class="button button-secondary" href="https://polyscope-lab.netlify.app" target="_blank"
+                  rel="noreferrer">Live Demo</a>
+                <a class="button button-ghost dev-only" href="https://github.com/GrantConnor/Polyscope-Labs"
+                  target="_blank" rel="noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-panel motion" data-direction="left">
+            <div class="project-media">
+              <img src="./simmering-kettle-preview.png" alt="Simmering Kettle project preview" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Project Three</h3>
+                <span class="project-badge">Launch Site</span>
+              </div>
+              <p>
+                My first attempt at a revamp of a local restaurant webpage. Although this is just a mockup, you can
+                feel the atmosphere and homey vibes this site is going for.
+              </p>
+              <p class="project-stack">Landing Pages • Performance • Atmosphere • UI</p>
+              <div class="project-links">
+                <a class="button button-secondary" href="https://simmering-kettle.netlify.app" target="_blank"
+                  rel="noreferrer">Live Demo</a>
+                <a class="button button-ghost dev-only" href="https://github.com/GrantConnor/Simmering-Kettle"
+                  target="_blank" rel="noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+          <!-- PROJECT CARD END -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="shell section-stack">
+        <div class="section-intro motion" data-direction="left">
+          <p class="section-kicker">Services / Skills</p>
+          <h2>Focused capabilities for brands, founders, and modern digital products.</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="glass-panel service-card motion" data-direction="left">
+            <h3>Front-End Development</h3>
+            <p>
+              Semantic HTML, scalable CSS architecture, accessible components, and clean
+              vanilla JavaScript interactions.
+            </p>
+          </article>
+
+          <article class="glass-panel service-card motion" data-direction="right">
+            <h3>Responsive Interface Design</h3>
+            <p>
+              Thoughtful layouts for desktop, tablet, and mobile with spacing, hierarchy,
+              and visual pacing that feels high-end.
+            </p>
+          </article>
+
+          <article class="glass-panel service-card motion" data-direction="left">
+            <h3>Performance & Polish</h3>
+            <p>
+              Lightweight motion, smooth scrolling, reduced-motion support, and detail work
+              that keeps the experience elegant and efficient.
+            </p>
+          </article>
+
+          <article class="glass-panel service-card motion" data-direction="right">
+            <h3>Portfolio & Landing Pages</h3>
+            <p>
+              Premium personal brands, showcase sites, and marketing pages with a cinematic
+              visual identity and clear conversion paths.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="shell section-stack">
+        <div class="section-intro motion" data-direction="right">
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s build something that feels sharp, immersive, and unmistakably finished.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <article class="glass-panel contact-card motion" data-direction="left">
+            <p class="contact-lead">
+              Interested in collaborating, launching a new site, or refining an existing
+              interface? E-mail for a quote or with your project ideas.
+            </p>
+
+            <div class="contact-list" aria-label="Contact information">
+              <a href="mailto:grantjamesconnor@gmail.com">
+                <span>Email</span>
+                <strong>grantjamesconnor@gmail.com</strong>
+              </a>
+              <a href="tel:+17056272680">
+                <span>Phone</span>
+                <strong>(705) 627-2680</strong>
+              </a>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=540+Essa+Road" target="_blank"
+                rel="noreferrer">
+                <span>Location</span>
+                <strong>540 Essa Road:</strong>
+              </a>
+            </div>
+          </article>
+
+          <aside class="glass-panel contact-aside motion" data-direction="right">
+            <div class="contact-aside-top">
+              <p class="aside-label">Location</p>
+              <div class="map-embed-wrap">
+                <iframe class="map-embed" title="Map showing 540 Essa Road"
+                  src="https://www.google.com/maps?q=540+Essa+Road&amp;z=15&amp;output=embed" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:grantjamesconnor@gmail.com">Email Me</a>
+              <a class="button button-secondary"
+                href="https://www.google.com/maps/search/?api=1&amp;query=540+Essa+Road" target="_blank"
+                rel="noreferrer">
+                Open in Maps
+              </a>
+            </div>
+
+            <div class="social-placeholder">
+              <p>Social links placeholder</p>
+              <div class="social-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner glass-panel motion" data-direction="left">
+      <p>© <span id="year"></span> Grant Connor</p>
+      <a href="#hero">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
